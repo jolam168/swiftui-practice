@@ -10,7 +10,9 @@ import SwiftUI
 
 struct ProfileUIView: View {
     @State var button : Bool = false
-
+    @State var appeared: Double = 0.0
+    @State var isNavigationBarHidden: Bool = false
+    
     var body: some View {
         
 //        List {
@@ -70,20 +72,36 @@ struct ProfileUIView: View {
 //                .edgesIgnoringSafeArea(.all)
 //            AngularView().edgesIgnoringSafeArea(.all)
 //        }
-
-    GeometryReader { geometry in
-        ScrollView (.horizontal){
-            HStack{
-                
-                ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-
-                    AngularView().frame(width: geometry.size.width-20).padding(10)
+        NavigationView {
+            GeometryReader { geometry in
+                ScrollView (.horizontal){
+                    HStack{
+                        
+                        ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
+                            NavigationLink(destination:ContentView(button: self.$button)
+//                                .opacity(self.appeared)
+//                                .animation(Animation.easeInOut(duration: 3.0), value: self.appeared)
+//                                .onAppear {self.appeared = 1.0}
+//                                .onDisappear {self.appeared = 0.0}
+                                
+                            ){
+                                AngularView().frame(width: geometry.size.width-20).padding(.horizontal,10)
+                                
+                            }
+//                            .navigationBarTitle("Hidden Title")
+//                            .navigationBarHidden(self.isNavigationBarHidden)
+//                            .onAppear {
+//                                self.isNavigationBarHidden = true
+//                            }
+                            
+                            
+                        }
+                        
                     }
- 
                 }
-        }
-//        .content.offset(x:0)
-//            .frame(width: geometry.size.width)
+                //        .content.offset(x:20)
+                //            .frame(width: geometry.size.width)
+            }
         }
     }
 }

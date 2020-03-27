@@ -21,9 +21,9 @@ struct HomeView: View {
 //                }) {
 //                    Text(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/)
 //                }
-                NavigationLink(destination: ScanningView()){
+//                NavigationLink(destination: ScanningView()){
                     Text("message")
-                }
+//                }
             }
         }
                     
