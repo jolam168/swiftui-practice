@@ -13,22 +13,7 @@ struct HomeView: View {
     @State var button: Bool = false
 
     var body: some View {
-        NavigationView {
-            VStack {
-//                Button(action: {
-//                    self.button.toggle()
-//
-//                }) {
-//                    Text(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/)
-//                }
-//                NavigationLink(destination: ScanningView()){
-                    Text("message")
-//                }
-            }
-        }
-                    
-        
-            
+       MainView()
     }
 }
 
