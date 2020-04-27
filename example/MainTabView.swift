@@ -19,6 +19,9 @@ struct MainTabView: View {
                 //                Image()
                 Text("Main")
             }
+            ProfileHomeView().tabItem{
+                Text("Main")
+            }
         }
     }
 }

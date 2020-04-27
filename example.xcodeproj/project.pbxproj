@@ -22,6 +22,8 @@
 		3BBF4C592431907400879E93 /* DataUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBF4C582431907400879E93 /* DataUIView.swift */; };
 		3BC5CA0524419AC8001B8B36 /* ProfileHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC5CA0424419AC8001B8B36 /* ProfileHomeView.swift */; };
 		3BC5CA0F24441EF1001B8B36 /* exampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC5CA0E24441EF1001B8B36 /* exampleTests.swift */; };
+		3BC5CA1724458465001B8B36 /* ProfileDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC5CA1624458465001B8B36 /* ProfileDetailView.swift */; };
+		3BC5CA19244598B5001B8B36 /* MessageListUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC5CA18244598B5001B8B36 /* MessageListUIView.swift */; };
 		3BDE97A123B43802003C918F /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDE97A023B43802003C918F /* ListView.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,8 @@
 		3BC5CA0C24441EF1001B8B36 /* exampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = exampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC5CA0E24441EF1001B8B36 /* exampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exampleTests.swift; sourceTree = "<group>"; };
 		3BC5CA1024441EF1001B8B36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BC5CA1624458465001B8B36 /* ProfileDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailView.swift; sourceTree = "<group>"; };
+		3BC5CA18244598B5001B8B36 /* MessageListUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListUIView.swift; sourceTree = "<group>"; };
 		3BDE97A023B43802003C918F /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,7 +112,9 @@
 				3B0A01E923B49FB4002BD06C /* MainTabView.swift */,
 				3B0A01EB23B5C1F2002BD06C /* ProfileUIView.swift */,
 				3BC5CA0424419AC8001B8B36 /* ProfileHomeView.swift */,
+				3BC5CA1624458465001B8B36 /* ProfileDetailView.swift */,
 				3BBF4C582431907400879E93 /* DataUIView.swift */,
+				3BC5CA18244598B5001B8B36 /* MessageListUIView.swift */,
 				3B3846B523AA167E00CC3C10 /* Assets.xcassets */,
 				3B3846BA23AA167E00CC3C10 /* LaunchScreen.storyboard */,
 				3B3846BD23AA167E00CC3C10 /* Info.plist */,
@@ -235,12 +241,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BC5CA19244598B5001B8B36 /* MessageListUIView.swift in Sources */,
 				3B3846C423AAFE2D00CC3C10 /* FormView.swift in Sources */,
 				3B0A01E823B47F99002BD06C /* MainView.swift in Sources */,
 				3B0A01EA23B49FB4002BD06C /* MainTabView.swift in Sources */,
 				3B3846B023AA167B00CC3C10 /* AppDelegate.swift in Sources */,
 				3B3846B223AA167B00CC3C10 /* SceneDelegate.swift in Sources */,
 				3BDE97A123B43802003C918F /* ListView.swift in Sources */,
+				3BC5CA1724458465001B8B36 /* ProfileDetailView.swift in Sources */,
 				3B3846C823AB325700CC3C10 /* WebView.swift in Sources */,
 				3B3846C623AB055500CC3C10 /* HomeView.swift in Sources */,
 				3B0A01EC23B5C1F2002BD06C /* ProfileUIView.swift in Sources */,

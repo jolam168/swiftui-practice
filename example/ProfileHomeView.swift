@@ -20,6 +20,17 @@ struct ProfileItem: Codable , Identifiable{
     let user_info: String
 }
 
+extension ProfileItem{
+    init(name:String){
+        id = 0
+        user_gender = "F"
+        user_birth = ""
+        user_profile_pic = "https://puchi-kano.com/wp/wp-content/uploads/2019/06/1-7-240x320.jpg"
+        created_at = ""
+        user_info = "はじめまして、あやのです！美味しいものを食べると幸せな気分になります💕友達からは、おっちょこちょいと言われます(笑)素敵な時間を一緒に過ごしてくれる彼氏さん、お誘いお待ちしております♡"
+    }
+}
+
 class ImageLoader : ObservableObject{
     @Published var data: Data?
     
@@ -93,20 +104,23 @@ struct RemoteImageView: View{
     }
 }
 
+
 struct ProfileHomeView: View {
     @ObservedObject var viewModel = ProfileListViewModel()
     
     var body: some View {
-        List(viewModel.profiles){ p in
-            
-            HStack {
-                RemoteImageView(url: p.user_profile_pic)
-                Text(p.user_info)
-
+        NavigationView{
+            List(viewModel.profiles){ p in
+                NavigationLink(destination:ProfileDetailView(profile: p)){
+                    HStack {
+                        RemoteImageView(url: p.user_profile_pic)
+                        Text(p.user_info)
+                            
+                    }.navigationBarTitle("Home")
+                }
+            }.onAppear(){
+                self.viewModel.fetch()
             }
-            
-        }.onAppear(){
-            self.viewModel.fetch()
         }
     }
 }
