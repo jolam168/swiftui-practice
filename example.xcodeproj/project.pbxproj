@@ -24,6 +24,7 @@
 		3BC5CA0F24441EF1001B8B36 /* exampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC5CA0E24441EF1001B8B36 /* exampleTests.swift */; };
 		3BC5CA1724458465001B8B36 /* ProfileDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC5CA1624458465001B8B36 /* ProfileDetailView.swift */; };
 		3BC5CA19244598B5001B8B36 /* MessageListUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC5CA18244598B5001B8B36 /* MessageListUIView.swift */; };
+		3BD0E179245AA851000ABA00 /* DragUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD0E178245AA851000ABA00 /* DragUIView.swift */; };
 		3BDE97A123B43802003C918F /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDE97A023B43802003C918F /* ListView.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		3BC5CA1024441EF1001B8B36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BC5CA1624458465001B8B36 /* ProfileDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailView.swift; sourceTree = "<group>"; };
 		3BC5CA18244598B5001B8B36 /* MessageListUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListUIView.swift; sourceTree = "<group>"; };
+		3BD0E178245AA851000ABA00 /* DragUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragUIView.swift; sourceTree = "<group>"; };
 		3BDE97A023B43802003C918F /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 				3BC5CA1624458465001B8B36 /* ProfileDetailView.swift */,
 				3BBF4C582431907400879E93 /* DataUIView.swift */,
 				3BC5CA18244598B5001B8B36 /* MessageListUIView.swift */,
+				3BD0E178245AA851000ABA00 /* DragUIView.swift */,
 				3B3846B523AA167E00CC3C10 /* Assets.xcassets */,
 				3B3846BA23AA167E00CC3C10 /* LaunchScreen.storyboard */,
 				3B3846BD23AA167E00CC3C10 /* Info.plist */,
@@ -246,6 +249,7 @@
 				3B0A01E823B47F99002BD06C /* MainView.swift in Sources */,
 				3B0A01EA23B49FB4002BD06C /* MainTabView.swift in Sources */,
 				3B3846B023AA167B00CC3C10 /* AppDelegate.swift in Sources */,
+				3BD0E179245AA851000ABA00 /* DragUIView.swift in Sources */,
 				3B3846B223AA167B00CC3C10 /* SceneDelegate.swift in Sources */,
 				3BDE97A123B43802003C918F /* ListView.swift in Sources */,
 				3BC5CA1724458465001B8B36 /* ProfileDetailView.swift in Sources */,
